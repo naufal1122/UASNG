@@ -1,5 +1,7 @@
 PROJECT SKD Kelompok 6
 
+<img width="823" alt="A  TAMPILAN FRONT END KATALOG BUKU" src="https://user-images.githubusercontent.com/65862366/208025220-ae1ab2a7-c025-403f-ba7c-8d955d10dc7c.png">
+
 Deskripsi Proyek : 
 Manajemen Perpustakaan "PerpusBoss" dengan Laravel 8. 
 
