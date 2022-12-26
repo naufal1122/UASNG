@@ -45,17 +45,13 @@
                             <td>{{$item->buku->rak->rak}}</td>
                             <td>{{$item->buku->rak->baris}}</td>
                             <td>
-                                @if (!$keranjang->tanggal_pinjam)
-                                    <button wire:click="hapus({{$keranjang->id}}, {{$item->id}})" class="btn btn-sm btn-danger">Hapus</button>
-                                @endif
+                                <button wire:click="hapus({{$keranjang->id}}, {{$item->id}})" class="btn btn-sm btn-danger">Hapus</button>
                             </td>
                         </tr>
                     @endforeach
                 </tbody>
             </table>
-            @if (!$keranjang->tanggal_pinjam)
-                 <button wire:click="hapusMasal" class="btn btn-sm btn-danger">Hapus Masal</button>
-            @endif
+                 <button wire:click="hapusMasal" class="btn btn-sm btn-danger">Hapus Semua</button>
         </div>
     </div>
 </div>

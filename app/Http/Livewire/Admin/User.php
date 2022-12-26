@@ -35,13 +35,13 @@ class User extends Component
         $this->format();
         $this->admin = true;
     }
-  
+
     public function petugas()
     {
         $this->format();
         $this->petugas = true;
     }
-  
+
     public function peminjam()
     {
         $this->format();
@@ -56,7 +56,7 @@ class User extends Component
     public function store()
     {
         $this->validate();
-        
+
         $user = ModelsUser::create([
             'name' => $this->name,
             'email' => $this->email,
@@ -103,7 +103,7 @@ class User extends Component
                 $user = ModelsUser::paginate(5);
             }
         }
-        
+
         return view('livewire.admin.user', compact('user'));
     }
 
